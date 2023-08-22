@@ -16,10 +16,8 @@ const SearchCountry = ({ onSearch }) => {
       onSubmit={handleSearchCountry}
       autoComplete="off"
       className={`${
-        darkMode
-          ? "dark:text-gray-400 dark:bg-gray-800 "
-          : "text-gray-600  bg-White"
-      } max-w-4xl flex md:flex-1  shadow rounded  `}
+        darkMode ? "text-gray-400 bg-gray-800 " : "text-gray-600  bg-White"
+      } max-w-4xl flex md:flex-1  shadow rounded transition-all duration-200  `}
     >
       <input
         type="text"
@@ -31,7 +29,7 @@ const SearchCountry = ({ onSearch }) => {
         onChange={(e) => setSearchText(e.target.value)}
         className={`${
           darkMode
-            ? "dark:text-gray-400 dark:placeholder-gray-400 dark:bg-gray-800"
+            ? "text-gray-400 placeholder-gray-400 bg-gray-800"
             : " text-gray-600 placeholder-gray-600 bg-White"
         } py-3 px-4 w-full shadow rounded outline-none   transition-all duration-200`}
       />

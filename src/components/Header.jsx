@@ -9,14 +9,14 @@ const Header = () => {
     <div
       className={`${
         darkMode
-          ? "dark:bg-Very-Dark-Blue dark:hover:bg-Dark-Blue"
+          ? "bg-Very-Dark-Blue hover:bg-Dark-Blue"
           : " bg-white hover:bg-gray-200"
       } sticky top-0 right-0 left-0   transition-all duration-200 shadow`}
     >
       <div className="mx-auto px-4 sm:px-8 py-4 flex justify-between items-center gap-4">
         <h2
           className={`${
-            darkMode ? "dark:text-white" : "text-Very-Dark-Blue"
+            darkMode ? "text-white" : "text-Very-Dark-Blue"
           } font-bold text-sm sm:text-lg  `}
         >
           Where in the world?
@@ -32,7 +32,7 @@ const Header = () => {
           <span
             className={`${
               darkMode
-                ? "dark:text-white font-medium text-xs"
+                ? "text-white font-medium text-xs"
                 : "text-Very-Dark-Blue font-medium text-xs"
             }`}
           >

@@ -10,7 +10,7 @@ const Article = ({ flags, name, population, region, capital }) => {
         <div
           className={`${
             darkMode
-              ? " dark:bg-Very-Dark-Blue dark:hover:bg-Dark-Blue"
+              ? " bg-Very-Dark-Blue hover:bg-Dark-Blue"
               : "bg-white hover:bg-gray-200"
           } transition-all duration-200 rounded-lg shadow overflow-hidden`}
         >
@@ -22,7 +22,7 @@ const Article = ({ flags, name, population, region, capital }) => {
           <div className="p-4">
             <h2
               className={`${
-                darkMode ? "dark:text-white" : "text-Very-Dark-Blue"
+                darkMode ? "text-white" : "text-Very-Dark-Blue"
               } font-bold text-lg mb-2 `}
             >
               {name.common}
@@ -30,21 +30,21 @@ const Article = ({ flags, name, population, region, capital }) => {
             <ul className={`flex flex-col items-starts justify-start gap-2`}>
               <li
                 className={`${
-                  darkMode ? "dark:text-Dark-Gray" : "text-Very-Dark-Blue"
+                  darkMode ? "text-Dark-Gray" : "text-Very-Dark-Blue"
                 }`}
               >
                 Population: {population.toLocaleString()}
               </li>
               <li
                 className={`${
-                  darkMode ? "dark:text-Dark-Gray" : "text-Very-Dark-Blue"
+                  darkMode ? "text-Dark-Gray" : "text-Very-Dark-Blue"
                 }`}
               >
                 Region: {region}
               </li>
               <li
                 className={`${
-                  darkMode ? "dark:text-Dark-Gray" : "text-Very-Dark-Blue"
+                  darkMode ? "text-Dark-Gray" : "text-Very-Dark-Blue"
                 }`}
               >
                 Capital: {capital}

@@ -18,9 +18,9 @@ const FilterRegion = ({ onSelect, getCountries }) => {
         id="filter region"
         className={`${
           darkMode
-            ? "dark:text-gray-400 dark:bg-gray-800 dark:focus:bg-gray-700 "
+            ? "text-gray-400 bg-gray-800 focus:bg-gray-700 "
             : "bg-White focus:bg-white text-gray-600"
-        } w-52 py-3 px-4 outline-none shadow rounded `}
+        } w-52 py-3 px-4 outline-none shadow rounded transition-all duration-200 `}
         onChange={handleFilterRegion}
       >
         <option value="All">All</option>
